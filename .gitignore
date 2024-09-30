@@ -1,0 +1,39 @@
+# Gradle build artifacts
+backend/.gradle/*
+backend/build/*
+backend/.idea/*
+.idea/*
+*.iml
+.gradle/*
+
+# Local environment configuration files
+*/**/.envrc
+*/**/local_kube_config.yaml
+*/**/local_kube_config.yaml.eksctl.lock
+
+# Hidden files that should not be tracked
+*/**/hidden.csv
+*/**/hidden.txt
+*/**/hidden.md
+
+# Terraform state and lock files
+**/.terraform/*
+EC2/.terraform/*
+S3/.terraform/*
+EC2/*.tfstate
+EC2/*.tfstate.*
+S3/*.tfstate
+S3/*.tfstate.*
+*.tfstate
+*.tfstate.*
+
+# Terraform working directories
+.terraform/
+*.lock.hcl
+EC2/.terraform.lock.hcl
+S3/.terraform.lock.hcl
+
+# Miscellaneous logs and backups
+crash.log
+*.log
+*.zip
