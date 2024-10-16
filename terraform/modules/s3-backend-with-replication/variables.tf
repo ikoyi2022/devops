@@ -18,7 +18,7 @@ variable "common_tags" {
   default = {
     "id"             = "1759"
     "owner"          = "Ikoyi"
-    "environment"    = "dev"
+    "environment"    = "development"
     "project"        = "devops"
     "create_by"      = "Terraform"
     "cloud_provider" = "aws"
